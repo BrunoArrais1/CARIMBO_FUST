@@ -8,6 +8,17 @@ function trocarAba(id, el) {
 
   // remove active dos botões
   var tabs = document.getElementsByClassName('tab');
+  function trocarAba(id, el) {
+
+  // esconde todas
+  document.getElementById('aba1').classList.remove('ativa');
+  document.getElementById('aba2').classList.remove('ativa');
+
+  // mostra a selecionada
+  document.getElementById(id).classList.add('ativa');
+
+  // remove active dos botões
+  var tabs = document.getElementsByClassName('tab');
   for (var i = 0; i < tabs.length; i++) {
     tabs[i].classList.remove('active');
   }
